@@ -6,7 +6,7 @@ We've already seen how a `Parse.Query` with `get` can retrieve a single `Parse.O
 
 In many cases, `get` isn't powerful enough to specify which objects you want to retrieve. `Parse.Query` offers different ways to retrieve a list of objects rather than just a single object.
 
-The general pattern is to create a `Parse.Query`, put conditions on it, and then retrieve an `Array` of matching `Parse.Object`s using `find`. For example, to retrieve of the scores with a particular `playerName`, use the `equalTo` method to constrain the value for a key.
+The general pattern is to create a `Parse.Query`, put conditions on it, and then retrieve an `Array` of matching `Parse.Object`s using `find`. For example, to retrieve the scores with a particular `playerName`, use the `equalTo` method to constrain the value for a key.
 
 ```js
 var GameScore = Parse.Object.extend("GameScore");
